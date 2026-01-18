@@ -34,11 +34,12 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented features:
+## Video Walkthrough
 
-<img src='https://www.loom.com/share/9fd873d49d09437f9aa9bc989f41c890' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Here’s a walkthrough of implemented features:
 
-🎥 Video walkthrough recorded using Loom.
+[Video Walkthrough on Loom](https://www.loom.com/share/9fd873d49d09437f9aa9bc989f41c890)
+
 
 
 ## Notes
