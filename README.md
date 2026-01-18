@@ -1,40 +1,50 @@
 # WEB102 Prework - *Name of App Here*
 
-Submitted by: **Your Name Here**
+Submitted by: **Julius TY Woart**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster Crowdfundingp** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **3 hrs** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* [ ] The introduction section explains the background of the company and how many games remain unfunded.
-* [ ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* [ ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+* [x ] The introduction section explains the background of the company and how many games remain unfunded.
+* [ x] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [x ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [x ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
 
 * [ ] List anything else that you can get done to improve the app functionality!
+ - [x ] Add a search bar to allow users to quickly find games by name
+- [ x] Add smooth scrolling navigation to jump to different sections of the page
+- [ x] Enhance accessibility with ARIA labels and improved color contrast
+- [ x] Add sorting options (e.g., by funding amount or number of backers)
+- [ x] Improve visual design with animations and hover effects
+
+
+The following **optional** features are implemented:
+
+- [x] Dynamic filtering using JavaScript `filter`
+- [x] Conditional rendering with ternary operators
+- [x] Sorting and highlighting the top two funded games
+- [x] Responsive layout using Flexbox
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://www.loom.com/share/9fd873d49d09437f9aa9bc989f41c890' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+🎥 Video walkthrough recorded using Loom.
+
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+One of the main challenges was understanding how to effectively use JavaScript array methods such as `filter`, `reduce`, and `sort` to manipulate the game data without mutating the original arrays. Additionally, ensuring that DOM updates occurred correctly without duplicating elements required careful use of helper functions to clear and re-render content. These challenges were resolved by tracing the logic step by step and reusing modular functions for rendering and filtering.
 
 ## License
 
