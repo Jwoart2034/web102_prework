@@ -77,8 +77,6 @@ const raisedCard = document.getElementById("total-raised");
 const totalRaised = GAMES_JSON.reduce( (acc, game) => acc + game.pledged, 0);
 raisedCard.innerHTML = `$${totalRaised.toLocaleString('en-US')}`;
 
-// set inner HTML using template literal
-raisedCard.innerHTML = `$${totalRaised.toLocaleString()}`;
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
@@ -157,21 +155,30 @@ const unfundedGamesParagraph = document.createElement("p");
 unfundedGamesParagraph.innerHTML = unfundedMessage;
 descriptionContainer.appendChild(unfundedGamesParagraph);
 
-
-
 /************************************************************************************
+ * 
+ * /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort 
  */
-// use destructuring and the spread operator to grab the first and second games
-const [topGame, secondGame, ...rest] = sortedGames;
 
-// create a new element to hold the name of the top pledge game, then append it to the correct element
+
+const firstGameContainer = document.getElementById("first-game");
+const secondGameContainer = document.getElementById("second-game");
+
+const sortedGames = [...GAMES_JSON].sort((item1, item2) => {
+  return item2.pledged - item1.pledged;
+});
+
+// use destructuring and the spread operator to grab the first and second games
+const [topGame, runnerUp, ...rest] = sortedGames;
+
+// create a new element to hold the name of the top pledge game, then append it
 const topGameName = document.createElement("p");
-topGameName.innerHTML = topGame.name;
+topGameName.innerText = topGame.name;
 firstGameContainer.appendChild(topGameName);
 
 // do the same for the runner up item
-const secondGameName = document.createElement("p");
-secondGameName.innerHTML = secondGame.name;
-secondGameContainer.appendChild(secondGameName);
+const runnerUpName = document.createElement("p");
+runnerUpName.innerText = runnerUp.name;
+secondGameContainer.appendChild(runnerUpName);
