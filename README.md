@@ -37,15 +37,26 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here’s a walkthrough of implemented features:
+<img src="assets/walkthrough.gif" title="GIF Walkthrough" width="600" />
 
-[Video Walkthrough on Loom](https://www.loom.com/share/9fd873d49d09437f9aa9bc989f41c890)
+
+🎥 Full video walkthrough (Loom):  
+https://www.loom.com/share/9fd873d49d09437f9aa9bc989f41c890
 
 
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
 One of the main challenges was understanding how to effectively use JavaScript array methods such as `filter`, `reduce`, and `sort` to manipulate the game data without mutating the original arrays. Additionally, ensuring that DOM updates occurred correctly without duplicating elements required careful use of helper functions to clear and re-render content. These challenges were resolved by tracing the logic step by step and reusing modular functions for rendering and filtering.
+
+## Future Improvements
+- Add a search bar to filter games by name.
+- Add sorting controls (pledged amount, backers, percent funded).
+- Improve accessibility (ARIA labels, keyboard navigation).
+- Add a “percent funded” progress bar on each game card.
+
 
 ## License
 
